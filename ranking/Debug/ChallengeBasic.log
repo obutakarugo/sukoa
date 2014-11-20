@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\users\vantan\desktop\ランキング\src\main.cpp(68): warning C4101: 'Draw' : ローカル変数は 1 度も使われていません。
+c:\users\vantan\desktop\ランキング\src\main.cpp(62): warning C4101: 'Init' : ローカル変数は 1 度も使われていません。
+c:\users\vantan\desktop\ランキング\src\main.cpp(65): warning C4101: 'Update' : ローカル変数は 1 度も使われていません。
+  ChallengeBasic.vcxproj -> C:\Users\vantan\Desktop\ランキング\ChallengeBasic.exe
