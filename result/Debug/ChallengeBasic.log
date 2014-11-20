@@ -1,5 +1,0 @@
-﻿  main.cpp
-c:\users\vantan\desktop\リザルト - コピー\src\main.cpp(63): warning C4101: 'Draw' : ローカル変数は 1 度も使われていません。
-c:\users\vantan\desktop\リザルト - コピー\src\main.cpp(57): warning C4101: 'Init' : ローカル変数は 1 度も使われていません。
-c:\users\vantan\desktop\リザルト - コピー\src\main.cpp(60): warning C4101: 'Update' : ローカル変数は 1 度も使われていません。
-  ChallengeBasic.vcxproj -> C:\Users\vantan\Desktop\リザルト - コピー\ChallengeBasic.exe
