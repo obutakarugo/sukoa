@@ -17,8 +17,6 @@ int main() {
   AppEnv app_env(Window::WIDTH, Window::HEIGHT,
                  false, false);
   //数字の情報を構造体で定義
-
-
   struct Object{
 	  int hp;
 	  Vec2f pos;
@@ -79,29 +77,46 @@ int main() {
 
  // int onepoint_x = 0;
  // int onepoint_y = 0;
-  //芋タップスコア
-  int score  = 67890;
-  int score2 = 12345;
-  int score3 = 46497;
-  int score4 = 37564;
-  int score5 = 11072;
-  int score6 = 14545;
-  int score7 = 21919;
+  //スコア
+  int score1 = 10009;
+  int score2 = 10009;
+  int score3 = 10009;
+  int score4 = 3000;
+  int score5 = 10009;
+  int score6 = 10009;
+  int score7 = 10009;
+  int score8 = 0;
+  int score11 = 10;
+  int score22 = 20;
+  int score33 = 30;
+  int score44 = 40;
+  int score55 = 50;
+  int score66 = 60;
+  int score77 = 70;
+  /*
   int digit_score[5];
-
   digit_score[0] = 8;
   digit_score[1] = 6;
   digit_score[2] = 5;
   digit_score[3] = 2;
   digit_score[4] = 1;
+  */
   //	プレイ前のスコアを記憶しておく
-  int def_score  = score;
+  int def_score1 = score1;
   int def_score2 = score2;
   int def_score3 = score3;
   int def_score4 = score4;
   int def_score5 = score5;
   int def_score6 = score6;
   int def_score7 = score7;
+  int def_score8 = score8;
+  int def_score11 = score11;
+  int def_score22 = score22;
+  int def_score33 = score33;
+  int def_score44 = score44;
+  int def_score55 = score55;
+  int def_score66 = score66;
+  int def_score77 = score77;
 
 
   while (1) {
@@ -119,26 +134,26 @@ int main() {
 
 
 	//芋タップ元スコア
-	int one_points = def_score / 1 % 10;
-	int ten_points = def_score / 10 % 10;
-	int hundred_points = def_score / 100 % 10;
-	int thousand_points = def_score / 1000 % 10;
-	int ten_thousand_points = def_score / 10000;
+	int one_points1 = def_score1 / 1 % 10;
+	int ten_points1 = def_score1 / 10 % 10;
+	int hundred_points1 = def_score1 / 100 % 10;
+	int thousand_points1 = def_score1 / 1000 % 10;
+	int ten_thousand_points1 = def_score1 / 10000;
 	//芋タップ変動スコア
 	for (int i = 0; i < 10; i++){
-		if (one_points == numbers_info[i].id){
+		if (one_points1 == numbers_info[i].id){
 			drawTextureBox(450, 250, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(),number,Color(1,1,1));
 		}
-		if (ten_points == numbers_info[i].id){
+		if (ten_points1 == numbers_info[i].id){
 			drawTextureBox(425, 250, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
 		}
-		if (hundred_points == numbers_info[i].id){
+		if (hundred_points1 == numbers_info[i].id){
 			drawTextureBox(400, 250, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
 		}
-		if (thousand_points == numbers_info[i].id){
+		if (thousand_points1 == numbers_info[i].id){
 			drawTextureBox(375, 250, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
 		}
-		if (ten_thousand_points == numbers_info[i].id){
+		if (ten_thousand_points1 == numbers_info[i].id){
 			drawTextureBox(350, 250, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
 		}
 	}
@@ -286,8 +301,117 @@ int main() {
 			drawTextureBox(350, -180, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
 		}
 	}
+	//芋タップ元数
+	int one_points11 = def_score11 / 1 % 10;
+	int ten_points11 = def_score11 / 10 % 10;
+	//芋タップ変動数
+	for (int i = 0; i < 10; i++){
+		if (one_points11 == numbers_info[i].id){
+			drawTextureBox(125, 245, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+		if (ten_points11 == numbers_info[i].id){
+			drawTextureBox(100, 245, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+	}
+	//芋スワイプ元数
+	int one_points22 = def_score22 / 1 % 10;
+	int ten_points22 = def_score22 / 10 % 10;
+	//芋スワイプ変動数
+	for (int i = 0; i < 10; i++){
+		if (one_points22 == numbers_info[i].id){
+			drawTextureBox(125, 195, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+		if (ten_points22 == numbers_info[i].id){
+			drawTextureBox(100, 195, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+	}
+	//虫タップ元数
+	int one_points33 = def_score33 / 1 % 10;
+	int ten_points33 = def_score33 / 10 % 10;
+	//虫タップ変動数
+	for (int i = 0; i < 10; i++){
+		if (one_points33 == numbers_info[i].id){
+			drawTextureBox(125, 105, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+		if (ten_points33 == numbers_info[i].id){
+			drawTextureBox(100, 105, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+	}
+	//虫スワイプ元数
+	int one_points44 = def_score44 / 1 % 10;
+	int ten_points44 = def_score44 / 10 % 10;
+	//虫スワイプ変動数
+	for (int i = 0; i < 10; i++){
+		if (one_points44 == numbers_info[i].id){
+			drawTextureBox(125, 55, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+		if (ten_points44 == numbers_info[i].id){
+			drawTextureBox(100, 55, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+	}
+	//神タップ元数
+	int one_points55 = def_score55 / 1 % 10;
+	int ten_points55 = def_score55 / 10 % 10;
+	//神タップ変動数
+	for (int i = 0; i < 10; i++){
+		if (one_points55 == numbers_info[i].id){
+			drawTextureBox(125, -55, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+		if (ten_points55 == numbers_info[i].id){
+			drawTextureBox(100, -55, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+	}
+	//神スワイプ元数
+	int one_points66 = def_score66 / 1 % 10;
+	int ten_points66 = def_score66 / 10 % 10;
+	//神スワイプ変動数
+	for (int i = 0; i < 10; i++){
+		if (one_points66 == numbers_info[i].id){
+			drawTextureBox(125, -105, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+		if (ten_points66 == numbers_info[i].id){
+			drawTextureBox(100, -105, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+	}
+	//comboボーナス元数
+	int one_points77 = def_score77 / 1 % 10;
+	int ten_points77 = def_score77 / 10 % 10;
+	//comboボーナス変動数
+	for (int i = 0; i < 10; i++){
+		if (one_points77 == numbers_info[i].id){
+			drawTextureBox(125, -180, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+		if (ten_points77 == numbers_info[i].id){
+			drawTextureBox(100, -180, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+	}
+	//リザルトスコア合計元
+	score8 = score1 + score2 + score3 + score4 + score5 + score6 + score7;
 
+	int one_points8 = score8 / 1 % 10;
+	int ten_points8 = score8 / 10 % 10;
+	int hundred_points8 = score8 / 100 % 10;
+	int thousand_points8 = score8 / 1000 % 10;
+	int ten_thousand_points8 = score8 / 10000 % 10;
 
+	//リザルトスコア合計数値
+	for (int i = 0; i < 10; i++){
+		if (one_points8 == numbers_info[i].id){
+			drawTextureBox(450, -270, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+		if (ten_points8 == numbers_info[i].id){
+			drawTextureBox(425, -270, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+		if (hundred_points8 == numbers_info[i].id){
+			drawTextureBox(400, -270, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+		if (thousand_points8 == numbers_info[i].id){
+			drawTextureBox(375, -270, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+		if (ten_thousand_points8 == numbers_info[i].id){
+			drawTextureBox(350, -270, 32, 32, numbers_info[i].texture_pos.x(), numbers_info[i].texture_pos.y(), numbers_info[i].texture_size.x(), numbers_info[i].texture_size.y(), number, Color(1, 1, 1));
+		}
+	}
 	/*
 	for (int i = 0; i < 10; i++){
 		if (i == digit_score[0]){
